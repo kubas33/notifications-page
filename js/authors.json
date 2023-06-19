@@ -1,9 +1,92 @@
 [
-	{"name": "Mark Webber", "photo":"../assets/images/avatar-mark-webber.webp"},
-	{"name": "Angela Gray", "photo":"../assets/images/avatar-angela-gray.webp"},
-	{"name": "Jacob Thompson", "photo":"../assets/images/avatar-jacob-thompson.webp"},
-	{"name": "Rizky Hasanuddin", "photo":"../assets/images/avatar-rizky-hasanuddin.webp"},
-	{"name": "Kimberly Smith", "photo":"avatar-kimberly-smith.webp"},
-	{"name": "Nathan Peterson", "photo":"avatar-nathan-peterson.webp"},
-	{"name": "Anna Kim", "photo":"avatar-anna-kim.webp"}
-]
+	{
+	  "notification": {
+		"author": {
+		  "name": "Mark Webber",
+		  "photo": "../assets/images/avatar-mark-webber.webp"
+		},
+		"message": "reacted to your recent post",
+		"time": "1m ago",
+		"type:": "post",
+		"target": "My first tournament today!",
+		"read": false
+	  }
+	},
+	{
+	  "notification": {
+		"author": {
+		  "name": "Angela Gray",
+		  "photo": "../assets/images/avatar-angela-gray.webp"
+		},
+		"message": "followed you",
+		"type:": "follow",
+		"time": "5m ago",
+		"read": false
+	  }
+	},
+	{
+	  "notification": {
+		"author": {
+		  "name": "Jacob Thompson",
+		  "photo": "../assets/images/avatar-jacob-thompson.webp"
+		},
+		"message": "has joined your group",
+		"type:": "group",
+		"target": "Chess Club",
+		"time": "1 day ago",
+		"read": false
+	  }
+	},
+	{
+	  "notification": {
+		"author": {
+		  "name": "Rizky Hasanuddin",
+		  "photo": "../assets/images/avatar-rizky-hasanuddin.webp"
+		},
+		"message": "sent you a private message",
+		"type": "message",
+		"target": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+		"time": "5 days ago",
+		"read": true
+	  }
+	},
+	{
+	  "notification": {
+		"author": {
+		  "name": "Kimberly Smith",
+		  "photo": "../assets/images/avatar-kimberly-smith.webp"
+		},
+		"message": "commented on your picture",
+		"type": "picture",
+		"target": "../assets/images/image-chess.webp",
+		"time": "1 week ago",
+		"read": true
+	  }
+	},
+	{
+	  "notification": {
+		"author": {
+		  "name": "Nathan Peterson",
+		  "photo": "../assets/images/avatar-nathan-peterson.webp"
+		},
+		"message": "reacted to your recent post",
+		"type:": "post",
+		"target": "5 end-game strategies to increase your win rate",
+		"time": "2 weeks ago",
+		"read": true
+	  }
+	},
+	{
+	  "notification": {
+		"author": {
+		  "name": "Anna Kim",
+		  "photo": "../assets/images/avatar-anna-kim.webp"
+		},
+		"message": "left the group",
+		"type:": "group",
+		"target": "Chess Club",
+		"time": "2 weeks ago",
+		"read": true
+	  }
+	}
+  ]
