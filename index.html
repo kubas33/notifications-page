@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"> 
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="top-container">
+        <div class="notif-number">
+          <h1>Notifications</h1> <span id="counter" class="counter">3</span>
+        </div>
+        <button>Mark all as read</button>
+      </div>
+      <ul id="notif-list" role="list">
+        <li data-author="Mark Webber">
+          <p class="unread"><strong>Mark Webber</strong> reacted to your recent post My first tournament today!</p>
+          <time>1m ago</time>
+        </li>
+        <li data-author="Angela Gray">
+          <p class="unread"><strong>Angela Gray</strong> followed you</p>
+          <time>5m ago</time>
+        </li>
+        <li data-author="Jacob Thompson">
+          <p class="unread"><strong>Jacob Thompson</strong> has joined your group Chess Club</p>
+          <time>1 day ago</time>
+        </li>
+        <li data-author="Rizky Hasanuddin">
+          <p><strong>Rizky Hasanuddin</strong> sent you a private message</p>
+          <time>5 days ago</time>
+          <p class="notif-msg">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </p>
+        </li>
+        <li data-author="Kimberly Smith">
+          <p class="notif-picture"><strong>Kimberly Smith</strong> commented on your picture</p>
+          <time>1 week ago</time>
+        </li>
+        <li data-author="Nathan Peterson">
+          <p><strong>Nathan Peterson</strong> reacted to your recent post 5 end-game strategies to increase your win rate</p>
+          <time>2 weeks ago</time>
+        </li>
+        <li data-author="Anna Kim">
+          <p><strong>Anna Kim</strong> left the group Chess Club</p>
+          <time>2 weeks ago</time>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">pow4h</a>.
+  </div>
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
