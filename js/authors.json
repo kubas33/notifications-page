@@ -7,7 +7,7 @@
 		},
 		"message": "reacted to your recent post",
 		"time": "1m ago",
-		"type:": "post",
+		"type": "post",
 		"target": "My first tournament today!",
 		"read": false
 	  }
@@ -19,7 +19,7 @@
 		  "photo": "../assets/images/avatar-angela-gray.webp"
 		},
 		"message": "followed you",
-		"type:": "follow",
+		"type": "follow",
 		"time": "5m ago",
 		"read": false
 	  }
@@ -31,7 +31,7 @@
 		  "photo": "../assets/images/avatar-jacob-thompson.webp"
 		},
 		"message": "has joined your group",
-		"type:": "group",
+		"type": "group",
 		"target": "Chess Club",
 		"time": "1 day ago",
 		"read": false
@@ -58,7 +58,10 @@
 		},
 		"message": "commented on your picture",
 		"type": "picture",
-		"target": "../assets/images/image-chess.webp",
+		"target": {
+			"src": "../assets/images/image-chess.webp",
+			"alt": "image chess"
+			},	
 		"time": "1 week ago",
 		"read": true
 	  }
@@ -70,7 +73,7 @@
 		  "photo": "../assets/images/avatar-nathan-peterson.webp"
 		},
 		"message": "reacted to your recent post",
-		"type:": "post",
+		"type": "post",
 		"target": "5 end-game strategies to increase your win rate",
 		"time": "2 weeks ago",
 		"read": true
@@ -83,7 +86,7 @@
 		  "photo": "../assets/images/avatar-anna-kim.webp"
 		},
 		"message": "left the group",
-		"type:": "group",
+		"type": "group",
 		"target": "Chess Club",
 		"time": "2 weeks ago",
 		"read": true
