@@ -26,7 +26,7 @@ function createNotificationElement(notificationData) {
   notifAuthor.textContent = notificationData.notification.author.name;
   const link = document.createElement("a");
   const content = document.createElement("div");
-  const message = document.createElement("p");
+  const message = document.createElement("span");
   const picture = document.createElement("img");
 
   if (!notificationData.notification.read) {
@@ -40,6 +40,7 @@ function createNotificationElement(notificationData) {
 
   const notificationElement = document.createElement("p");
   const notifText = document.createTextNode('\u00A0' + notificationData.notification.message + '\u00A0');
+
   notificationElement.appendChild(notifAuthor);
   notificationElement.appendChild(notifText);
 
@@ -62,7 +63,9 @@ function createNotificationElement(notificationData) {
   case "message":
     li.classList.add("message");
     message.textContent = notificationData.notification.target;
-    message.classList.add("msg")
+    link.classList.add("msg");
+    link.href = "#";
+    message.classList.add("msg");
     break;
   case "picture":
     li.classList.add("picture");
@@ -70,14 +73,17 @@ function createNotificationElement(notificationData) {
     picture.alt = notificationData.notification.target.alt;
     break;
   }
-
-  content.appendChild(notificationElement);
   const time = document.createElement("time");
+
+  content.appendChild(notificationElement,);
+  
   content.appendChild(time);
 
   time.textContent = notificationData.notification.time;
-  if (notificationData.notification.type === "message")
-    content.appendChild(message);
+  if (notificationData.notification.type === "message") {
+      content.appendChild(link);
+      link.appendChild(message);
+    }
   else if (notificationData.notification.type === "picture")
     content.appendChild(picture);
 
